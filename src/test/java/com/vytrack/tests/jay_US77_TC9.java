@@ -21,7 +21,7 @@ public class jay_US77_TC9 {
     public void testDriverUser(){
         driver.get("https://qa2.vytrack.com/user/login");
 
-        LogIn.crm_login(driver, "user44","UserUser123");
+        LogIn.vyTracklogin(driver, "user144","UserUser123");
         LogIn.verifyTitle(driver,"Dashboard");
 
         WebElement selectFleet = driver.findElement(By.xpath("//div[@id='main-menu']/ul/li[1]/a/span"));

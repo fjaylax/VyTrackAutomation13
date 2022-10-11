@@ -1,4 +1,7 @@
-import com.cydeo.utilities.WebDriverFactory;
+package com.vytrack.tests;
+
+
+import com.vytrack.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,13 +11,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.asserts.SoftAssert;
 
-
 public class TS13_71 {
     WebDriver driver;
 
     @BeforeMethod
     public void setUpClass() {
-        driver = WebDriverFactory.getDriver1("chrome", 20);
+        driver = WebDriverFactory.getDriver("chrome");
         driver.get("https://qa2.vytrack.com/user/login");
     }
 
