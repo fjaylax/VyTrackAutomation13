@@ -13,7 +13,7 @@ public class TestTS13_70 {
     WebDriver driver;
     @BeforeMethod
     public void setUpClass() {
-        driver = WebDriverFactory.getDriver1("chrome", 20);
+        driver = WebDriverFactory.getDriver("chrome");
         driver.get("https://qa2.vytrack.com/user/login");
     }
     @AfterMethod
